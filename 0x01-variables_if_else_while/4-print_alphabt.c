@@ -1,22 +1,21 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
- *
- * Return: Always 0 (success)
+ *followed by a new line, except q and e
+ * Return: Always 0
  */
 
 int main(void)
 {
-	char c;
+	char la;
 
-	c = 'a';
-	while
-		(c <= 'z') {
-			putchar(c);
-			c++;
+	for (la = 'a'; la <= 'z'; la++)
+	{
+		if (la != 'e' && la != 'q')
+			putchar(la);
 		}
 
 	putchar('\n');
+
 	return (0);
 }
